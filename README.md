@@ -1,8 +1,4 @@
-
-#django-upthor
-
-[![PyPI version](https://badge.fury.io/py/django-upthor.svg)](https://badge.fury.io/py/django-upthor) 
-[![Build Status](https://travis-ci.org/thorgate/django-upthor.svg?branch=master)](https://travis-ci.org/thorgate/django-upthor)
+# django-upthor
 
 `django-upthor` provides a django application for simple ajax file uploads. We use
 https://github.com/blueimp/jQuery-File-Upload for the upload functionality.
@@ -10,10 +6,10 @@ https://github.com/blueimp/jQuery-File-Upload for the upload functionality.
 **Warning:** This isn't close to being a complete app, but it's getting there.
 
 
-#Usage
+# Usage
 
 
-##Step 1. Install
+## Step 1. Install
 
 - `pip install django-upthor`
 
@@ -24,7 +20,7 @@ Now you have two options:
 
 
 
-##Step 2. (Django 1.6+)
+## Step 2. (Django 1.6+)
 Add 'upthor' to your installed apps in settings.py:
 
 ```
@@ -41,7 +37,7 @@ python manage.py migrate
 ```
 
 
-##Step 3. Use it in your app's models.
+## Step 3. Use it in your app's models.
 
 ```
 
@@ -89,7 +85,7 @@ class ExampleModelWithFile(models.Model):
 ```
 
 
-##Step 4. Make sure to include form media.
+## Step 4. Make sure to include form media.
 
 Make sure you include the media files for the form in your templates:
 
@@ -103,14 +99,14 @@ object of your modelform that uses the uploader fields.
 ```
 
 
-##Step 5. Add the upload url to your project urls.
+## Step 5. Add the upload url to your project urls.
 
 ```
     url(r'', include('upthor.urls')),
 ```
 
 
-##Step 6. Optional stuff
+## Step 6. Optional stuff
 
 #### Temporary file cleanup
 
@@ -135,7 +131,7 @@ You can override `ThorSingleUploadWidget.render_template` to return your own wid
 Currently it only supports local file backend, but we plan to add other backends when we reach a stable state.
 
 
-#Settings
+# Settings
 
 The following settings are customizable using your django project settings file.
 
