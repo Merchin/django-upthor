@@ -22,7 +22,7 @@ setup(
     long_description=read_md('README.md'),
     author="Thorgate",
     author_email='info@thorgate.eu',
-    url='https://github.com/thorgate/django-upthor',
+    url='https://github.com/merchin/django-upthor',
     packages=find_packages(),
     package_data={'upthor': [
         'static/upthor/css/*',
@@ -31,7 +31,7 @@ setup(
     ]},
     include_package_data=True,
     install_requires=[
-        'Django',
+        'Django>=2',
         'Pillow',
     ],
     classifiers=[

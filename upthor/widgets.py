@@ -2,10 +2,10 @@ import os
 
 import six
 
-from django.core.urlresolvers import reverse
 from django.forms import widgets, CheckboxInput
 from django.utils.encoding import force_text
 from django.utils.safestring import mark_safe
+from django.urls import reverse
 
 from upthor.forms import allowed_type
 from upthor.models import TemporaryFileWrapper, get_max_file_size, get_size_error, FqCrypto, fq_encrypt_disabled
