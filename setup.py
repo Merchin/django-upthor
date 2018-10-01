@@ -31,7 +31,7 @@ setup(
     ]},
     include_package_data=True,
     install_requires=[
-        'Django>=2',
+        'Django>=1.11.15',
         'Pillow',
     ],
     classifiers=[
