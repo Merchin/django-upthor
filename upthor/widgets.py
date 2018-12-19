@@ -169,7 +169,7 @@ class ThorSingleUploadWidget(widgets.FileInput):
     def render_template(self, **kwargs):
         return force_text(HTML).format(**kwargs)
 
-    def render(self, name, value, attrs=None):
+    def render(self, name, value, attrs=None, renderer=None):
         element_id = 'id'
         md5sum_field_value = ''
         file_url = ''
