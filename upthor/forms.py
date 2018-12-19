@@ -27,7 +27,7 @@ class TemporaryFileForm(forms.ModelForm):
     def clean_file(self):
         uploaded_file = self.cleaned_data.get('file', False)
         if uploaded_file:
-            if uploaded_file._size > get_max_file_size():
+            if uploaded_file.size > get_max_file_size():
                 raise forms.ValidationError(get_size_error())
         else:
             raise forms.ValidationError(force_text(_("Couldn't read uploaded file")))
